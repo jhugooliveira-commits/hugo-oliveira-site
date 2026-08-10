@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Hugo Oliveira — Psicólogo</title>
+<meta name="description" content="Entre em contato com Hugo Oliveira, psicólogo CRP 02/26602, ou agende uma consulta pelo Google Agenda.">
+<meta name="theme-color" content="#3f798b">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Hugo Oliveira - Psicólogo">
+      <img src="assets/logo-full.png" alt="Hugo Oliveira Psicólogo">
+    </a>
+    <button class="menu-toggle" data-menu aria-label="Abrir menu">☰</button>
+    <nav class="nav-links" data-nav>
+      <a href="index.html" class="">Início</a>
+      <a href="sobre.html" class="">Sobre</a>
+      <a href="servicos.html" class="">Como trabalho</a>
+      <a href="contato.html" class="active">Contato</a>
+      <button class="nav-cta" data-book>Agendar consulta</button>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><div class="eyebrow">Contato</div><h1>Vamos conversar?</h1><p class="lead">Se você deseja iniciar um acompanhamento, escolha um horário disponível ou entre em contato para conhecer melhor o atendimento.</p></div></section>
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-card">
+      <h2 style="font-size:32px">Agendamento</h2>
+      <p class="lead">Escolha diretamente um horário disponível no meu calendário.</p>
+      <button class="btn btn-primary" data-book style="margin-top:12px">Agendar consulta</button>
+      <p style="font-size:13px;color:var(--muted);margin-top:18px">O agendamento é realizado pelo Google. O site não solicita nem armazena informações clínicas para marcar a consulta.</p>
+    </div>
+    <div class="contact-card">
+      <h2 style="font-size:32px">Fale comigo</h2>
+      <a class="contact-link" href="https://wa.me/5581987918645" target="_blank" rel="noopener"><small>WhatsApp</small>(81) 98791-8645</a>
+      <a class="contact-link" href="mailto:hugoliveirapsi@gmail.com"><small>E-mail</small>hugoliveirapsi@gmail.com</a>
+      <div class="contact-link"><small>Atendimento</small>Sirinhaém-PE, Recife-PE e Castanhal-PA<br>Também há atendimento online.</div>
+      <a class="contact-link" href="https://www.google.com/search?q=Hugo+Oliveira+-+Psic%C3%B3logo+especialista+em+Neuropsicologia" target="_blank" rel="noopener"><small>Google Business</small>Ver perfil no Google</a>
+    </div>
+  </div>
+</section>
+<section class="section alt">
+  <div class="container">
+    <div class="cta"><div><h2>Não sabe por onde começar?</h2><p>Não é necessário chegar com tudo explicado. O primeiro passo pode ser simplesmente conversar sobre aquilo que fez você procurar atendimento.</p></div><button class="btn" data-book>Agendar consulta</button></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-full.png" alt="Hugo Oliveira Psicólogo" style="height:55px;filter:brightness(0) invert(1);opacity:.95">
+        <p>Jhonatas Hugo de Oliveira Lopes — Psicólogo, CRP 02/26602. Pós-graduado em Neuropsicologia. Atendimento em Psicanálise, presencial e online.</p>
+      </div>
+      <div>
+        <h3>Links rápidos</h3>
+        <p><a href="index.html">Início</a></p>
+        <p><a href="sobre.html">Sobre</a></p>
+        <p><a href="servicos.html">Como trabalho</a></p>
+        <p><a href="contato.html">Contato</a></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p><a href="mailto:hugoliveirapsi@gmail.com">hugoliveirapsi@gmail.com</a></p>
+        <p><a href="https://wa.me/5581987918645" target="_blank" rel="noopener">WhatsApp: (81) 98791-8645</a></p>
+        <p>Sirinhaém-PE, Recife-PE e Castanhal-PA — e atendimento online</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jhonatas Hugo de Oliveira Lopes — Psicólogo. Todos os direitos reservados.</span>
+      <span>CRP 02/26602</span>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-label="Agendamento de consulta">
+  <div class="modal-box">
+    <div class="modal-head">
+      <strong>Agendamento de consulta</strong>
+      <button class="modal-close" data-close aria-label="Fechar">×</button>
+    </div>
+    <iframe id="bookingFrame" title="Agendamento pelo Google Agenda" loading="lazy"></iframe>
+    <div class="modal-fallback">
+      <p>Se o Google não permitir a abertura dentro do site, use o botão abaixo.</p>
+      <a class="btn btn-primary" href="https://calendar.app.google/Kig3jaQkufHSZWHf6" target="_blank" rel="noopener">Abrir agendamento</a>
+    </div>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
