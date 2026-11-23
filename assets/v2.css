@@ -25,3 +25,38 @@
 
 .section,.quote-band,.final-cta,.footer{position:relative}.section+.section:before,.quote-band+.section:before{content:"";position:absolute;top:0;left:50%;width:min(92%,1180px);height:1px;background:rgba(47,111,128,.12);transform:translateX(-50%)}
 @media(max-width:540px){.life-stages{padding:34px 18px 36px}.life-stages p{max-width:310px;margin:auto}.life-stages .stage-separator{padding:0 5px}.section+.section:before,.quote-band+.section:before{width:calc(100% - 28px)}.faq-q{padding:18px 0}.faq-a{padding-right:8px}.floating-social a{width:48px;height:48px}}
+
+.area-topics {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.area-topic {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: baseline;
+  gap: 12px 32px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.area-topic h3 {
+  margin: 0;
+  font: 400 clamp(21px, 2.4vw, 28px)/1.25 var(--serif);
+}
+
+.area-topic p {
+  margin: 0;
+  max-width: 62ch;
+  color: rgba(255, 255, 255, .88);
+}
+
+.final-cta h2:last-of-type {
+  margin-bottom: 26px;
+}
+
+@media (max-width: 540px) {
+  .area-topic {
+    grid-template-columns: 1fr;
+  }
+}
