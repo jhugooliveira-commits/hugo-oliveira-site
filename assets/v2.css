@@ -60,3 +60,39 @@
     grid-template-columns: 1fr;
   }
 }
+
+#sobre.info {
+  background: var(--cream);
+}
+#sobre .info-grid {
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  gap: clamp(24px, 4vw, 48px);
+  max-width: 1100px;
+}
+.about-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.about-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.about-label::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid rgba(47, 111, 128, .35);
+}
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 820px) {
+  #sobre .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-logo {
+    max-width: 480px;
+  }
+}
