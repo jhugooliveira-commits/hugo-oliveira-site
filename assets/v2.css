@@ -106,3 +106,37 @@
     height: 175px;
   }
 }
+
+.hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.hero-actions .btn {
+  padding: 10px clamp(11px, 1.4vw, 18px);
+  min-height: 44px;
+  line-height: 1.4;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.hero-instagram {
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  color: var(--petrol-dark);
+  font-size: 14px;
+}
+.hero-instagram:hover {
+  text-decoration: underline;
+}
+@media (max-width: 300px) {
+  .hero-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
