@@ -361,3 +361,16 @@ main > .final-cta h2 {
 @media (min-width: 821px) and (max-width: 1000px) {
   .home-header .nav-links { gap: 16px; }
 }
+
+@media (min-width: 1120px) {
+  #inicio .hero-grid {
+    width: min(85%, 1550px);
+    min-height: clamp(470px, 31.25vw, 780px);
+  }
+  #inicio .hero-copy {
+    padding-block: 36px;
+  }
+  #inicio .hero-office {
+    object-position: right center;
+  }
+}
