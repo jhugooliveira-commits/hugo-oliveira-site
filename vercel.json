@@ -20,6 +20,10 @@
     {
       "source": "/publicacoes/:slug([a-z0-9-]+)",
       "destination": "/publicacoes/:slug.html"
+    },
+    {
+      "source": "/psicologo-em-castanhal",
+      "destination": "/psicologo-em-castanhal.html"
     }
   ]
 }
