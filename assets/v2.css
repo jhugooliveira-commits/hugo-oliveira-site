@@ -214,3 +214,11 @@
     background: linear-gradient(90deg, rgba(44, 36, 29, .85), rgba(44, 36, 29, .62));
   }
 }
+
+.area-topic-copy p + p,
+.faq-a p + p {
+  margin-top: .75em;
+}
+.faq-a p {
+  margin: 0;
+}
