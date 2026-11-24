@@ -25,3 +25,14 @@ O site tenta abrir o Google Agenda dentro de um modal. Se o navegador/Google blo
 
 ## Observação
 As informações profissionais devem ser conferidas antes da publicação definitiva, especialmente cidades, modalidade de atendimento e demais dados de contato.
+
+## Publicações
+
+Adicione os textos autorizados em `scripts/publicacoes.json`. Cada item deve ter
+`slug` (letras minúsculas, números e hífens), `titulo`, `resumo`, `data`
+como AAAA-MM-DD e `paragrafos` como uma lista de textos.
+
+Execute `node scripts/gerar-publicacoes.mjs` na raiz do repositório e revise
+os arquivos gerados antes de enviá-los ao GitHub. O comando atualiza as
+páginas de artigo, a listagem, as três publicações mais recentes na home e o
+sitemap. A Vercel publica o HTML estático a partir do Git.
