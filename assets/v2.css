@@ -374,3 +374,58 @@ main > .final-cta h2 {
     object-position: right center;
   }
 }
+
+#faq .faq-a { padding: 0; }
+.faq-a-body { padding: 0 35px 16px 0; }
+.faq-a.faq-animating { overflow: clip; }
+#faq .faq-q span { transition: none; }
+
+@media (max-width: 540px) {
+  .faq-a-body { padding-right: 8px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section-entered {
+    animation: section-enter 650ms ease-out backwards;
+  }
+  .section-entered.from-left {
+    --enter-x: -16px;
+    --enter-y: 0px;
+  }
+  .section-entered.from-right {
+    --enter-x: 16px;
+    --enter-y: 0px;
+    animation-delay: 55ms;
+  }
+  .area-topic.section-entered, .why-inner > p.section-entered { animation-delay: 45ms; }
+  .area-topic:nth-child(2).section-entered { animation-delay: 75ms; }
+  .area-topic:nth-child(3).section-entered { animation-delay: 100ms; }
+  .section-entered:focus-within { animation: none; }
+
+  #inicio .hero-copy > :is(h1, p) {
+    animation: hero-enter 650ms ease-out backwards;
+  }
+  #inicio .hero-copy > p { animation-delay: 65ms; }
+  #inicio .hero-copy > p + p { animation-delay: 110ms; }
+}
+
+@keyframes section-enter {
+  from {
+    opacity: .15;
+    transform: translate(var(--enter-x, 0px), var(--enter-y, 18px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-enter {
+  from { opacity: .8; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 540px) and (prefers-reduced-motion: no-preference) {
+  .section-entered.from-left { --enter-x: -10px; }
+  .section-entered.from-right { --enter-x: 10px; }
+}
